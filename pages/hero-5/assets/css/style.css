@@ -12,17 +12,48 @@
 
 body, html {
     height: 100dvh;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    padding: 10px;
 }
 
 .row-1 {
     width: 100%;
     height: 10%;
+    background-color: #e9e9e9;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 1px 5px 5px #989898;
+    transition: 1s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     .logo {
         display: flex;
         align-items: center;
         font-size: 24pt;
-        padding-left: 1rem;
+        padding-left: 5rem;
+        gap: 0.5rem;
+
+        animation: fly 5s linear;
+
+        i {
+            transform: rotateZ(90deg);
+        }
+    }
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(0);
+    } 50% {
+        transform: translateX(50%);
+    } 100% {
+        transform: translate(100%, -100%);
     }
 }
 
@@ -33,32 +64,58 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
 
-    .column-1, .column-2, .column-3 {
+    .column-1, .column-3 {
         width: 33.3%;
         height: 100%;
+        background-color: #e9e9e9;
+        position: relative;
 
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 5rem;
+
+        h1::after {
+            content: "";
+            position: absolute;
+            width: 15%;
+            height: 5px;
+            left: 10%;
+            top: 18%;
+            background-color: #212121;
+        }
     }
     .column-2 {
-        i {
-            font-size: 144pt;
-            background-color: bisque;
-            padding: 100px;
+        width: 30%;
+        height: 100%;
+        background-color: #e9e9e9;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            z-index: 2;
         }
     }
 }
 
 .row-3 {
     width: 100%;
-    height: 10%;
-    
+    height: 5%;
+    background-color: #e9e9e9;
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
 }

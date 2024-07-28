@@ -24,6 +24,7 @@ body, html {
         align-items: center;
         font-size: 24pt;
         padding-left: 1rem;
+        cursor: pointer;
     }
 }
 
