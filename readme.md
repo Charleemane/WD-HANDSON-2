@@ -111,3 +111,6 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
+| pure css carousel | card 5 animation | https://codepen.io/tianyili/pen/qBEdeoy |
+| jsfiddle | card 4 effect | https://jsfiddle.net/pratikhegde/vkhej5au/ |
+| Blog Card Grid | card design ideas | https://codepen.io/hluebbering/pen/xxJeVZL |
